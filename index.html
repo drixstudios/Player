@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en-us">
    <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163896464-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163896464-1');
+    </script>
+
         <title>Downloading: Player</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +26,7 @@
                 left: 0;
                 right: 0;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
             }
             #loading {
@@ -24,18 +35,19 @@
             progress[value] {
                 appearance: none;
                 background-color: #eee;
-                border-radius: 3px;
+                border-radius: 1px;
                 box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-                width: 50%;
+                width: 80%;
                 height: 8px
             }
         </style>
     </head>
   <body>
-    <div id="loading"> loading
-        <progress value="0" max="100" id="progress"></progress>
-      <div id="status">Downloading...</div>
-      <div></div>
+    <div id="loading">      
+      <img src="LogoDrix.png" width="160" height="160">
+      <progress value="0" max="100" id="progress"></progress><br>          
+      <font size="4" face="verdana" color="white">Loading. Please wait...</font><br>      
+      <div id="status">Downloading...</div>            
     </div>
 
     <div>
